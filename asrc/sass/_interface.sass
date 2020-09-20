@@ -1,0 +1,120 @@
+*
+    box-sizing: border-box
+    margin: 0
+body
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    height: 100%
+    font-family: 'Montserrat', sans-serif
+    font-size: 20px
+    color: #ffffff
+    overflow-x: hidden
+.overflow-hidden
+    width: 100%
+    overflow: hidden
+.container
+    max-width: 1470px
+    margin: 0px auto  
+._line 
+    border-right: 1px solid #525252
+    border-left: 1px solid #525252
+    @media (max-width: 576.98px)
+        border: none
+@media (max-width: 1600px)
+    .container
+        max-width: 1300px
+        margin: 0px auto  
+@media (max-width: 1400px)
+    .container
+        max-width: 1100px
+        margin: 0px auto  
+@media (max-width: 1199px)
+    .container
+        max-width: 960px
+        margin: 0px auto  
+@media (max-width: 991px)
+    .container
+        max-width: 750px
+@media (max-width: 768px)
+    .container
+        min-width: 100%
+        padding: 0 20px
+button:active, button:focus
+    outline: none !important
+
+button::-moz-focus-inner
+    border: 0 !important
+button
+    border: none
+    background: none
+    cursor: pointer
+.wrapper
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+.fullscreen
+    min-height: 100vh
+    display: flex
+
+
+.ibg
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+.ibg
+    img
+        width: 0
+        height: 0
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        visibility: hidden
+
+
+.button 
+    width: 337px
+    height: 57px
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.04em
+    margin: 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    @media (max-width: 576.98px)
+        width: 100%
+        margin: 10px 0px
+.button_orange
+    background: #E0B98D 
+    color: #1D1B1B
+    transition: 0.5s all
+    &:hover
+        transition: 0.5s all
+        background: #F5F5F5
+    &::active
+        background: #C29B71
+        transition: 0.5s all
+    
+.button_transparent 
+    border: 2px solid #F5F5F5
+    color: #F5F5F5
+    span
+        transition: 0.5s all
+        border-bottom: 2px solid transparent
+    &:hover 
+        span
+            transition: 0.5s all
+            border-bottom: 2px solid #E0B98D
+    
+
+$maxWidth: 1920
+
+@mixin adaptiv-font($pcSize, $mobSize) 
+    $addSize: $pcSize - $mobSize
+    $maxWidth: $maxWidth - 320
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
+
+

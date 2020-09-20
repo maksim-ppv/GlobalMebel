@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>GlobalMebel</title>
+</head>
+<body>
+<div class="wrapper">
+    @@include('_header.html')
+    <main class="main">
+        <section class="about">
+            <div class='container'>
+                <h2 class="title about__title">О нас</h2>
+                <div class="about__content">
+                    <div class="about__video"></div>
+                    <div class="about__text text-about">
+                        <div class="text-about__top">С 2014 года занимаемся производством корпусной и мягкой мебели, обустройством интерьеров частных квартир и коттеджей.<br><br> Стремимся к тому, чтобы придя к нам, клиент мог заказать все необходимое для реализации интерьера его мечты, начиная от корпусной мебели и до эксклюзивных решений в одном месте и не тратить время на бесконечные поездки. Наши сотрудники всегда готовы воплотить в жизнь любую вашу идею.</div>
+                        <div class="text-about__bottom">
+                            <div class="text-about__column">
+                                <span class="text-about__number">01.</span>
+                                <span class="text-about__title">Индивидуальность</span>
+                                <span class="text-about__description">Любые ваши идеи и вашего дизайнера будут реализованы в одном месте</span>
+                            </div>
+                            <div class="text-about__column">
+                                <span class="text-about__number">02.</span>
+                                <span class="text-about__title">Экспертность</span>
+                                <span class="text-about__description">Каждый сотрудник - эксперт в своем деле с  опытом более 5 лет на своей должности</span>
+                            </div>
+                            <div class="text-about__column">
+                                <span class="text-about__number">03.</span>
+                                <span class="text-about__title">Экономия времени</span>
+                                <span class="text-about__description">Без кучи поездок по салонам и сравнений разных предложений - мы все подберем </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('_footer.html')
+    @@include('_popup.html')
+</div>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

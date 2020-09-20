@@ -1,0 +1,40 @@
+.option {
+    position: relative;
+    cursor: pointer;
+    padding-left: 25px;
+    line-height: 16px;
+    font-size: 15px;
+    font-weight: 300;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    input {
+        display: none;
+    }
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        content: '';
+        background: #F9F9F9;
+        box-shadow: inset 0px 2px 4px rgba(196, 196, 196, 0.19);
+        border-radius: 50%;
+    }
+
+    &.active {
+        &:before {
+            background: linear-gradient(197.81deg, #DAB171 -6.32%, #F3DEAD -6.31%, #F4E6CB 36.24%, #D9BD89 78.81%);
+            border: 3px solid #F9F9F9;
+            box-shadow: 0px 0px 0px 1px #D9BD89;
+        }
+    }
+}
+
+
+
