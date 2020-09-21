@@ -1368,6 +1368,10 @@ svg #base {
     font-size: 12px;
   }
 
+  .content-header__title {
+    padding-top: 30px;
+  }
+
   .advanteges__number {
     color: #E0B98D;
   }
@@ -1448,3 +1452,11 @@ svg #base {
     margin-bottom: 0;
   }
 }
+
+.webp .popup__body{ background: url(../img/menu/pop-up.webp) center/cover no-repeat; }
+
+.webp .popup-thanks__body{ background: url(../img/menu/pop-up-thanks.webp) center/cover no-repeat; }
+
+.webp .menu-mobile__body{ background: url(../img/menu/bg.webp) center/cover no-repeat; }
+
+.webp .header{ background: url(../img//header/bg-header.webp) center no-repeat; }

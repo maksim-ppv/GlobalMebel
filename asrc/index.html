@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/webp.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/preloader.min.css">
     <title>GlobalMebel</title>
 </head>
 <body>
+    <div id="cube-loader">
+        <div class="caption">
+          <div class="cube-loader">
+            <img src="./img/header/logo.png" alt="" />
+          </div>
+        </div>
+    </div>
 <div class="wrapper">
     @@include('_header.html')
     <main class="main">
@@ -44,6 +50,8 @@
     @@include('_footer.html')
     @@include('_popup.html')
 </div>
+    <script src="js/webp.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/script.min.js"></script>
 </body>
 </html>

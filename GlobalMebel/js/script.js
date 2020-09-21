@@ -18,4 +18,13 @@ menu.addEventListener('click', event => {
 });
 btn.addEventListener('click', modal);
 ;
+window.onload = function() {
+    setTimeout(function(){
+        let preloader = document.getElementById('cube-loader');
+        
+        if(!preloader.classList.contains('done')){
+            preloader.classList.add('done');
+        }
+    }, 1000);
+};;
 
