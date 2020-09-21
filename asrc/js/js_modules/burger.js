@@ -11,7 +11,7 @@ const modal = ()=>{
 
 menu.addEventListener('click', event => {
    const target = event.target
-   if(!target.closest('.menu-mobile__body')){
+   if(!target.closest('.menu__contents')){
       modal();
    }
 });
