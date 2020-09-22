@@ -6,7 +6,7 @@ body
     height: 100%
     font-family: 'Montserrat', sans-serif
     font-size: 20px
-    color: #ffffff
+    color: #F5F5F5
     overflow-x: hidden
 .overflow-hidden
     width: 100%
@@ -91,63 +91,53 @@ button
     @media (max-width: 576.98px)
         width: 100%
         margin: 10px 0px
-.button_orange
-    background: #E0B98D 
-    color: #1D1B1B
-    transition: 0.5s all
-    &:hover
-        transition: 0.5s all
-        background: #F5F5F5
-    &::active
-        background: #C29B71
-        transition: 0.5s all
-    
-.button_transparent 
-    border: 2px solid #F5F5F5
-    color: #F5F5F5
-    span
-        transition: 0.5s all
-        border-bottom: 2px solid transparent
-    &:hover 
-        span
-            transition: 0.5s all
-            border-bottom: 2px solid #E0B98D
-    
 
+
+.title-block
+    position: relative
 .title
     display: block 
     position: relative
-.menu-column-link__title
+    color: #F5F5F5
+    z-index: 8
+    font-weight: bold
+    font-size: 44px
+    line-height: 130%
+.title-block.menu-column-link__title
     margin: 15px 0px
     @media (max-width: 767.98px)
         margin: 10px 0px
         
     a 
+        color: #F5F5F5
         font-weight: 600
         font-size: 18px
+        z-index: 8
         line-height: 24px
         letter-spacing: 0.02em
         text-transform: uppercase
-        position: relative
-        z-index: 8
-        color: #F5F5F5
         transition: 0.3s all
+        position: relative
         &:hover
             color: #E0B98D
             transition: 0.3s all
 .undertitle
     position: absolute
-    left: 10px
-    top: -30px 
     color: #1F1F1F
+    top: -80%
+    left: 15px
     font-weight: 800
-    font-size: 42px
-    line-height: 54px
+    font-size: 64px
+    line-height: 140%
     z-index: 7
     letter-spacing: 0.02em
-.menu-column-link__undertitle
     @media (max-width: 767.98px)
         display: none
+.undertitle.menu-column-link__undertitle
+    left: 10px
+    top: -30px 
+    line-height: 54px
+    font-size: 42px
 
 $maxWidth: 1920
 
