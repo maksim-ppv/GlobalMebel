@@ -1274,6 +1274,7 @@ svg #base {
   display: block;
   padding: 10%;
   position: absolute;
+  cursor: pointer;
   background: url("../img//icon/play.png") center/cover no-repeat;
 }
 
