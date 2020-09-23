@@ -110,7 +110,7 @@ function showMessageByClass(ms, nums){
         
     };
     if(nums == '4'){
-        let th = $(".popup__fors");
+        let th = $(".popup__for_mail_4");
         $.ajax({
             type: "POST",
 			url: "https://zox.by/wp-content/themes/zox/mail.php",
@@ -122,7 +122,7 @@ function showMessageByClass(ms, nums){
         );
     };
     if(nums == '3'){
-        let th = $(".popup__forsm");
+        let th = $(".popup__for_mail_3");
 		$.ajax({
 			type: "POST",
 			url: "https://zox.by/wp-content/themes/zox/mail.php",

@@ -41,7 +41,7 @@ body
 @media (max-width: 768px)
     .container
         min-width: 100%
-        padding: 0 20px
+        padding: 0 10px
 button:active, button:focus
     outline: none !important
 
@@ -95,6 +95,8 @@ button
 
 .title-block
     position: relative
+    @media (max-width: 576.98px)
+        text-align: center
 .title
     display: block 
     position: relative
@@ -103,6 +105,8 @@ button
     font-weight: bold
     font-size: 44px
     line-height: 130%
+    @media (max-width: 576.98px)
+        font-size: 27px
 .title-block.menu-column-link__title
     margin: 15px 0px
     @media (max-width: 767.98px)
@@ -124,7 +128,7 @@ button
 .undertitle
     position: absolute
     color: #1F1F1F
-    top: -80%
+    top: -50px
     left: 15px
     font-weight: 800
     font-size: 64px
