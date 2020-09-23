@@ -1590,6 +1590,7 @@ svg #base {
 
 .done-project {
   background: #1D1B1B;
+  border-top: 1px solid #525252;
   border-bottom: 1px solid #525252;
   overflow: hidden;
 }
@@ -1612,7 +1613,7 @@ svg #base {
 
 .done-project__body {
   width: 50%;
-  padding: 80px 15px 100px 15px;
+  padding: 80px 15px 100px;
   height: 100%;
 }
 
