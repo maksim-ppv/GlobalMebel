@@ -1227,7 +1227,6 @@ svg #base {
 
 .about__title-block {
   margin-top: 50px;
-  margin-left: 15px;
   margin-bottom: 15px;
 }
 
@@ -1298,7 +1297,6 @@ svg #base {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding-left: 15px;
   padding-top: 20px;
 }
 
@@ -1368,7 +1366,7 @@ svg #base {
   font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
   line-height: 22px;
   letter-spacing: 0.02em;
-  padding-bottom: 0px;
+  padding-bottom: 8px;
 }
 
 .text-about__title {
@@ -1378,6 +1376,8 @@ svg #base {
 }
 
 .text-about__description {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
   font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
 }
 
@@ -2004,7 +2004,6 @@ svg #base {
 
 @media (max-width: 670px) {
   .video-about__links {
-    padding-left: 0px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
