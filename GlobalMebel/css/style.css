@@ -1266,7 +1266,16 @@ svg #base {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.video-about__open:before {
   cursor: pointer;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .video-about__open:after {
@@ -1295,17 +1304,34 @@ svg #base {
 
 .video-about__link {
   margin-right: 35px;
+  position: relative;
 }
 
 .video-about__link:last-child {
   margin-right: 0px;
 }
 
+.video-about__link_active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.video-about__link_active:hover {
+  opacity: 0;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
 .about__text {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  padding-top: 150px;
+  padding-top: 120px;
   border-left: 1px solid #525252;
   padding-bottom: 50px;
 }
@@ -1332,6 +1358,7 @@ svg #base {
   padding-left: 15px;
   padding-bottom: 35px;
   padding-right: 15px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .text-about__number,
