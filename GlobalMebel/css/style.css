@@ -1633,6 +1633,7 @@ svg #base {
   letter-spacing: 0.02em;
   display: block;
   padding-bottom: 40px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .done-project__link {
