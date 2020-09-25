@@ -236,11 +236,14 @@
             </div>
             <div class="done-project__form-img">
                 <img class="done-project__img" src="./img/done-project/image1.jpg" alt="" />
-                <form action="#" data-nums="1" class="done-project__form popup__for_mail_1">
+                <form action="#" data-nums="1" class="form done-project__form popup__for_mail_1">
                     <span class="form__title">Отправьте Ваш проект на просчет</span>
                     <input type="text" class="form__inputs form__wish" placeholder="Напишите Ваши пожелания">
                     <input type="text" class="form__inputs form__wish" placeholder="Электронная почта">
-                    <input type="tel" class="form__inputs phone req form__wish" placeholder="+ 375 (__) ___ __ __*">
+                    <div class="req-phone_message">
+                        <input type="tel" class="form__inputs phone req form__wish" placeholder="+ 375 (__) ___ __ __*">
+                    </div>
+
                     <div class="form__file"><img src="./img/icon/paperclip.svg" alt="" /><span>Прикрепить файл проекта</span></div>
                     <button type="submit" class="button button_orange button__form"><span>Получить консультацию</span></button>
                     <span class="form__description">Ваши данные будут защищены по всем требованиям <a href="#">Политики конфеденциальности</a></span>
@@ -488,7 +491,316 @@
 
                 </div>
             </div>
-        </section>   
+        </section> 
+        <section class="quiz section">
+            <div class='container padding quiz__container _line'>
+                <div class="title-block slider__title-block">
+                    <span class="undertitle slider__undertitle">Предложение</span>
+                    <h2 class="title slider__title">Сформируем<br> индивидуальное предложение </h2>
+                </div>
+                <span class="subtitle slider__subtitle quiz__subtitle">
+                    Ответьте на Х вопросов и мы подготовим для вас предложение с примерами работ
+                </span>
+                <div class="quizs__body">
+                    <div class="quiz-start quiz-item">
+                            <span class="quiz-item__number-question">Осталось 5 вопросов</span>
+                            <ul class="quiz-item__ul-consol">
+                                <li class="quiz-item__li quiz-item__li_active"></li>
+                                <li class="quiz-item__li"></li>
+                                <li class="quiz-item__li"></li>
+                                <li class="quiz-item__li"></li>
+                                <li class="quiz-item__li"></li>
+                                <li class="quiz-item__li"></li>
+                            </ul>
+                            <div class="quiz-item__body">
+                                <div class="quiz-item__content content-quiz">
+                                    <span class="content-quiz__title">Какое помещение нужно обсутроить?</span>
+                                            <div class="options content-quiz__row">
+                                                <div class="option_one option content-quiz_option">
+                                                    <div class="content-quiz__text">
+                                                        <input type="checkbox" value="Квартира" name="Какое помещение нужно обсутроить?" checked/><span>Квартира</span>
+                                                    </div>
+                                                    <div class="content-quiz__img">
+                                                        <img src="./img/quizs/slide-1-img-1.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="option option_one content-quiz_option">
+                                                    <div class=" content-quiz__text">
+                                                        <input type="checkbox" value="Частный дом" name="Какое помещение нужно обсутроить?" /><span>Частный дом</span>
+                                                    </div>
+                                                    <div class="content-quiz__img">
+                                                        <img src="./img/quizs/slide-1-img-2.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="option option_one content-quiz_option active">
+                                                    <div class=" content-quiz__text ">
+                                                        <input type="checkbox" value="Коммерческий объект" name="Какое помещение нужно обсутроить?" /><span>Коммерческий объект</span>
+                                                    </div>
+                                                    <div class="content-quiz__img">
+                                                        <img src="./img/quizs/slide-1-img-3.png" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="quiz-item__content content-quiz display_none">
+                                    <span class="content-quiz__title">Какие работы необходимо произвести?</span>
+                                            <div class="options content-quiz__row options_2">
+
+                                                <div class="option content-quiz_option active">
+                                                    <div class="content-quiz__img">
+                                                        <img src="./img/quizs/slide-2-img-1.png" alt="" />
+                                                    </div>
+                                                    <input type="radio" value="1" name="form[type]" /><span>Перепланировка</span>
+                                                </div>
+                                                <div class="option content-quiz_option">
+                                                    <div class="content-quiz__img">
+                                                        <img src="./img/quizs/slide-2-img-2.png" alt="" />
+                                                    </div>
+                                                    <input type="radio" value="1" name="form[type]" /><span>Выравнивание пола</span>
+                                                </div>
+                                                <div class="option content-quiz_option">
+                                                    <div class="content-quiz__img">
+                                                        <img src="./img/quizs/slide-2-img-3.png" alt="" />
+                                                    </div>
+                                                    <input type="radio" value="1" name="form[type]" /><span>Выравнивание стен</span>
+                                                </div>
+                                                <div class="option content-quiz_option">
+                                                    <div class="content-quiz__img">
+                                                        <img src="./img/quizs/slide-2-img-4.png" alt="" />
+                                                    </div>
+                                                    <input type="radio" value="1" name="form[type]" /><span>Другое</span>
+                                                </div>
+                                                <div class="option content-quiz_option">
+                                                    <div class="content-quiz__img">
+                                                        <img src="./img/quizs/slide-2-img-5.png" alt="" />
+                                                    </div>
+                                                    <input type="radio" value="1" name="form[type]" /><span>Ничего не нужно</span>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="quiz-item__content content-quiz display_none">
+                                    <img class="quiz-slide-3__img" src="./img/quizs/slide-3-bg.png" alt="" />
+                                    <span class="content-quiz__title">Укажите общую площадь и количество комнат</span>
+                                    <div class="content-price-form__range range_2">
+                                        <div class="range-label">
+                                            <label class="content-price-form__select-label" for="">Введите общую площадь объекта:</label>
+                                            <input type="text" name="form[]" class="popup__input content-price-form__range-input rangeto" />
+                                            <span>м²</span>
+                                        </div>
+                                        <div class="range-info"><span>10 м²</span><span>300 м²</span></div>
+                                        <div class="category-params-item-price-range range_control"></div>
+                                    </div>
+                                    <div class="content-price-form__range range_3">
+                                        <div class="range-label">
+                                            <label class="content-price-form__select-label" for="">Введите общую площадь объекта:</label>
+                                            <input type="text" name="form[]" class="popup__input content-price-form__range-input rangeto" />
+                                            <span>м²</span>
+                                        </div>
+                                        <div class="range-info"><span>1</span><span>25</span></div>
+                                        <div class="category-params-item-price-range range_control"></div>
+                                    </div>
+                                </div>
+                                <div class="quiz-item__content content-quiz display_none">
+                                    <span class="content-quiz__title">Выберите необходимые параметры ремонта</span>
+                                            <div class="content-quiz__row row_4">
+                                                <div class="content-quiz_item-4">
+                                                    <div class="content-quiz-item-4__img">
+                                                        <img src="./img/quizs/slide-4-img-1.png" alt="" />
+                                                    </div>
+                                                    <span class="content-quiz-item-4__description">Количество санузлов</span>
+                                                    <div class="content-quiz-item-4__select">
+                                                        <div class="content-quiz-item-4__select-title spoiler">1 санузел</div>
+                                                        <div class="content-quiz-item-4__select-items spoiler_none">
+                                                            <span class="select-item">1 санузла</span>
+                                                            <span class="select-item">2 санузла</span>
+                                                            <span class="select-item">3 санузла</span>
+                                                            <span class="select-item">4 и больше</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-quiz_item-4">
+                                                    <div class="content-quiz-item-4__img">
+                                                        <img src="./img/quizs/slide-4-img-2.png" alt="" />
+                                                    </div>
+                                                    <span class="content-quiz-item-4__description">Потолки</span>
+                                                    <div class="content-quiz-item-4__select">
+                                                        <div class="content-quiz-item-4__select-title spoiler">Натяжные</div>
+                                                        <div class="content-quiz-item-4__select-items spoiler_none">
+                                                            <span class="select-item">Натяжные</span>
+                                                            <span class="select-item">Гипсокартон</span>
+                                                            <span class="select-item">Тканевые</span>
+                                                            <span class="select-item">Бетонные</span>
+                                                            <span class="select-item">Матовые</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-quiz_item-4">
+                                                    <div class="content-quiz-item-4__img">
+                                                        <img src="./img/quizs/slide-4-img-3.png" alt="" />
+                                                    </div>
+                                                    <span class="content-quiz-item-4__description">Стены</span>
+                                                    <div class="content-quiz-item-4__select">
+                                                        <div class="content-quiz-item-4__select-title spoiler">Под обои</div>
+                                                        <div class="content-quiz-item-4__select-items spoiler_none">
+                                                            <span class="select-item">Под обои</span>
+                                                            <span class="select-item">Под покраску</span>
+                                                            <span class="select-item">Под грунтовку</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-quiz_item-4">
+                                                    <div class="content-quiz-item-4__img">
+                                                        <img src="./img/quizs/slide-4-img-4.png" alt="" />
+                                                    </div>
+                                                    <span class="content-quiz-item-4__description">Пол</span>
+                                                    <div class="content-quiz-item-4__select">
+                                                        <div class="content-quiz-item-4__select-title spoiler">Ламинат</div>
+                                                        <div class="content-quiz-item-4__select-items spoiler_none">
+                                                            <span class="select-item">Ламинат</span>
+                                                            <span class="select-item">Линолеум</span>
+                                                            <span class="select-item">Плитка</span>
+                                                            <span class="select-item">Ковролин</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                </div>
+                                <div class="quiz-item__content content-quiz display_none">
+                                    <span class="content-quiz__title">У вас уже есть дизайн-проект?</span>
+                                            <div class="content-quiz-slide-5">
+                                                <img class="content-quiz-slide-5__img" src="./img/quizs/slide-5-bg.png" alt="slide-bg" />
+                                                <div class="options content-quiz__row options_5">
+    
+                                                    <div class="option content-quiz_option active">
+                                                        <input type="radio" value="1" name="form[type]" /><span>Да, есть</span>
+                                                    </div>
+                                                    <div class="option content-quiz_option">
+                                                        <input type="radio" value="1" name="form[type]" /><span>Нет, и не будет</span>
+                                                    </div>
+                                                    <div class="option content-quiz_option">
+                                                        <input type="radio" value="1" name="form[type]" /><span>Планирую заказать</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="quiz-item__content content-quiz display_none">
+                                    <span class="content-quiz__title">Как скоро необходимо приступить к ремонту?</span>
+                                            <div class="content-quiz-slide-5">
+                                                <img class="content-quiz-slide-5__img" src="./img/quizs/slide-6.png" alt="slide-bg" />
+                                                <div class="options content-quiz__row options_5">
+    
+                                                    <div class="option content-quiz_option active">
+                                                        <input type="radio" value="1" name="form[type]" /><span>Еще вчера</span>
+                                                    </div>
+                                                    <div class="option content-quiz_option">
+                                                        <input type="radio" value="1" name="form[type]" /><span>В тчение 1 недели</span>
+                                                    </div>
+                                                    <div class="option content-quiz_option">
+                                                        <input type="radio" value="1" name="form[type]" /><span>В течение месяца</span>
+                                                    </div>
+                                                    <div class="option content-quiz_option">
+                                                        <input type="radio" value="1" name="form[type]" /><span>Не к спеху, прицениваюсь</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                            <div class="quiz-item__buttons">
+                                <button type="submit" class="button button_transparent quiz-item__button quiz-item_button_prev"><span>назад</span></button>
+                                <button type="submit" class="button button_orange quiz-item__button quiz-item_button_next"><span>далее</span></button>
+                            </div>
+                    </div>
+                    <!-- <div class="quiz-end">
+                        <div class="quiz-end__body">
+                            <div class="quiz-end__img">
+                                <img src="./img/quizs/slide-end-bg.png" alt="" />
+                            </div>
+                            <div class="quiz-end__info">
+                                        <div class="quiz-end-info__top">
+                                            <span class="quiz-end-info__title">
+                                                Готово!
+                                            </span>
+                                            <span class="quiz-end-info__subtitle">
+                                                Куда Вам будет удобнее, чтобы мы отправили результат и бонусы?
+                                            </span>
+                                        </div>
+                                        <form action="#" data-ms="popup3" class="popup__form content-steps-middle__form form-steps-middle">
+                                            <div class="form-steps-middle__radiobuttons quiz-end-info__radiobuttons">
+                                                <div class="form-steps-middle__socials-button">
+                                                    <div class="options">
+                                                        <div class="option active"><div class="options-social"><img src="./img/icon/telegram.svg" alt="telegram" />Telegram</div><input type="radio" value="1" name="form[type]" /></div>
+                                                        <div class="option"><div class="options-social"><img src="./img/icon/viber.svg" alt="viber" />Viber</div><input type="radio" value="1" name="form[type]" /></div>
+                                                        <div class="option"><div class="options-social"><img src="./img/icon/whatsapp.svg" alt="whatsapp" />Whatsapp</div><input type="radio" value="1" name="form[type]" /></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <label class="quiz-end-info__label" for="">Введите Ваш телефон, мы вышлем стоимость и бонсуы на указанный способ в течение 20 минут</label>
+                                                <input type="tel" name="form[]" class="popup__input phone req" placeholder="Введите ваш телефон">
+                                            <div class="popup__info content-steps-middle__buttom quiz-end-info__security">Ваши данные защищены согласно <a href="">условиям обработки персональных данных</a></span></div>
+
+                                                <button type="submit" class="button content-steps-middle__button quiz-end-info__btn"><span>Получить результат</span></button>
+                                        </form>
+                            </div>
+                            <div class="quiz-item-right quiz-end__right">
+                                <div class="quiz-item-right__body item-right-quiz-end">
+                                        <div class="item-right-quiz__hope">
+                                            <span class="item-right-quiz__title">Ваши бонусы открыты:</span>
+                                            <div class="item-right-quiz__text item-right-quiz-end__text-1"><img src="./img/quizs/right-icon-1.svg" alt="" />Минимум 3 наших дизайнера<br> сделают для вас свои авторские<br> эскизы беслпатно</div>
+                                            <div class="item-right-quiz__text"><img src="./img/quizs/right-icon-2.svg" alt="" />Вышлем каталог наших идей<br> для будущего вдохновения</div>    
+
+                                        </div>
+                                    <div class="quiz-end-right__footer">
+                                        <span class="quiz-end-right__PDF">PDF-каталог</span>
+                                        <span class="quiz-end-right__text">Идеи нашей студии для будущего вдохновения</span>
+                                        <div class="quiz-end-right__adobe-file"><img src="./img/steps/adobe.svg" alt="adobe" /><span>Получить сейчас</span></div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section> 
+        <section class="brands ready-made">
+            <div class="brands__contents container ready-made__container">
+                <div class="brands__column-text ready-made__text">
+                    <div class="title-block ready-made__title-block">
+                        <span class="undertitle ready-made__undertitle">Готовые решения</span>
+                        <h2 class="title ready-made__title">Готовые решения</h2>
+                    </div>
+                    <span class="subtitle ready-made__subtitle">
+                        Возможно, мы уже работали в вашем доме<br> и можем предложить решения для вашей квартиры 
+                    </span>
+                    <div class="brands__column-images ready-made__column-images">
+                        <div class="brands__column-image ready-made__column-image"><img src="./img/brands/kaskad.png" alt="" /></div>
+                        <div class="brands__column-image ready-made__column-image"><img src="./img/brands/olympic.png" alt="" /></div>
+                        <div class="brands__column-image ready-made__column-image"><img src="./img/brands/MAYK.png" alt="" /></div>
+                        <div class="brands__column-image ready-made__column-image"><img src="./img/brands/chaikovski.png" alt="" /></div>
+                        <div class="brands__column-image ready-made__column-image"><img src="./img/brands/nb.png" alt="" /></div>
+                        <div class="brands__column-image ready-made__column-image"><img src="./img/brands/MW.png" alt="" /></div>
+                        <div class="brands__column-image ready-made__column-image"><img src="./img/brands//pirs.png" alt="" /></div>
+                    </div>
+                </div>
+                <form action="#" data-nums="2" class="form ready-made__form  popup__for_mail_2">
+                    <div class="form__header">
+                        <span class="form__title">Заполните форму</span>
+                        <span class="form__subtitle">и наш менежер:</span>
+                    </div>
+                    <div class="form__points">
+                        <div class="form__point"><span>01.</span>Перезвонит Вам</div>
+                        <div class="form__point"><span>02.</span>Бесплатно проконсультирует</div>
+                        <div class="form__point"><span>03.</span>Соориентирует по стоимости</div>
+                    </div>
+                    <input type="text" class="form__inputs form__wish" placeholder="Напишите Ваше имя">
+                    <div class="req-phone_message">
+                        <input type="tel" class="form__inputs phone req form__wish" placeholder="+ 375 (__) ___ __ __*">
+                    </div>
+                    <button type="submit" class="button button_orange button__form"><span>Получить консультацию</span></button>
+                    <span class="form__description">Ваши данные будут защищены по всем требованиям <a href="#">Политики конфеденциальности</a></span>
+                </form>
+            </div>
+    </section>  
     </main>
     @@include('_footer.html')
     @@include('_popup.html')

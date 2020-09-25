@@ -5,6 +5,7 @@
 @@include('js_modules/jquery.inputmask.js');
 @@include('main.js');
 @@include('slick.js');
+@@include('js_modules/forms.js');
 @@include('js_modules/active.js');
 
 

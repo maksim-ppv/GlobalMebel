@@ -167,12 +167,12 @@ function showMessageByClass(ms, nums){
 
 function addError(input){
 	input.addClass('err');
+	$('.req-phone_message').addClass('err');
 }
-function removeFormError(form){
-form.find('.form__generalerror').hide().html('');
-}
+
 function removeError(input){
 input.removeClass('err');
+$('.req-phone_message').removeError('err');
 }
 
 function maskclear(n){
@@ -185,60 +185,3 @@ if(n.val()==""){
 	n.parent().removeClass('focus');
 }
 }
-
-	//RANGE
-	const range = document.querySelectorAll('.range');
-	const range2 = document.querySelectorAll('.range_2');
-	const range3 = document.querySelectorAll('.range_3');
-	
-	range.forEach(item=>{
-		const rangeto = item.querySelector('.rangeto');
-		const rangeControl = item.querySelector('.range_control');
-		if($(rangeControl).length>0){
-			$(rangeControl).slider({
-				range: "min",
-				min: 0,
-				max: 3000,
-				value: 500,
-				slide: function( event, ui ){
-					$(rangeto).val(ui.value);
-				}
-			});
-			$(rangeto).val($(rangeControl).slider( "value"));
-	
-		}
-	});
-	range2.forEach(item=>{
-		const rangeto = item.querySelector('.rangeto');
-		const rangeControl = item.querySelector('.range_control');
-		if($(rangeControl).length>0){
-			$(rangeControl).slider({
-				range: "min",
-				min: 0,
-				max: 300,
-				value: 43,
-				slide: function( event, ui ){
-					$(rangeto).val(ui.value);
-				}
-			});
-			$(rangeto).val($(rangeControl).slider( "value"));
-	
-		}
-	});
-	range3.forEach(item=>{
-		const rangeto = item.querySelector('.rangeto');
-		const rangeControl = item.querySelector('.range_control');
-		if($(rangeControl).length>0){
-			$(rangeControl).slider({
-				range: "min",
-				min: 0,
-				max: 25,
-				value: 4,
-				slide: function( event, ui ){
-					$(rangeto).val(ui.value);
-				}
-			});
-			$(rangeto).val($(rangeControl).slider( "value"));
-	
-		}
-	})
