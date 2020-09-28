@@ -6,6 +6,7 @@
 @@include('main.js');
 @@include('slick.js');
 @@include('js_modules/forms.js');
+@@include('js_modules/baguetteBox.js');
 @@include('js_modules/active.js');
 
 

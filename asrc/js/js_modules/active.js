@@ -114,7 +114,38 @@ if($('.our-controls__uls').length>0){
 	  
 };
 
+if($('.feedback__slider').length>0){
+	$('.feedback__slider').slick({
+	//autoplay: true,
+	infinite: true,
+	// dots: true,
+	arrows: true,
+	accessibility:false,
+	slidesToShow:4,
+	autoplaySpeed: 3000,
+	//asNavFor:'',
+	adaptiveHeight: true,
+	swipe: false,
+	//appendDots:
+	appendArrows:$('.feedback__btn-group'),
+	nextArrow:'<button type="button" class="slick-next"></button>',
+	prevArrow:'<button type="button" class="slick-prev"></button>',
+	// variableWidth: true,
+	// centerMode: true,
+	responsive: [{
+		breakpoint: 1200,
+		settings: {
+		slidesToShow: 3,}
+		},{
+		breakpoint: 670,
+		settings: {
+		slidesToShow: 2}
+		}
+	]
+		
+	});
 
+};
 
 // if($('.feedback-slider__items').length>0){
 // 	$('.feedback-slider__items').slick({
@@ -247,4 +278,4 @@ var Scrollbar = window.Scrollbar;
 			alwaysShowTracks:true});
 	});
 
-
+baguetteBox.run('.baguetteBoxOne');
