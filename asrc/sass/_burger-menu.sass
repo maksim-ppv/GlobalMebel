@@ -72,7 +72,6 @@
 //===============================================================
 
 .menu__contents 
-    overflow: auto
     @media (max-width: 991.98px)
         border: none
 .menu__content 
@@ -97,7 +96,7 @@
         padding: 0
 .menu-column-link
     flex: 0 1 50%
-    padding-top: 30px
+    padding-top: 10px
     padding-right: 25px 
     @media (max-width: 767.98px)
         flex: 0 1 100%
@@ -152,7 +151,7 @@
 .menu-column-link__phone 
 .menu-column-link__mail
     padding-top: 15px
-    padding-bottom: 40px 
+    padding-bottom: 10px 
 
 .button 
 .button_transparent 
@@ -213,8 +212,10 @@
 .menu-footer__uls 
     display: flex
     justify-content: center
-    @media (max-width: 1199px)
+    @media (max-width: 620px)
         flex-wrap: wrap
+        max-width: 320px
+        margin: auto
 .menu-footer__li
     a
         color: #F5F5F5
@@ -238,9 +239,11 @@
             &:after
                 display: none
 .teleg
-    a
-        &:after
-            display: none           
+    @media (max-width: 620px)
+        a
+            &:after
+                display: none           
 .inst,.whats
-    a
-        margin-left: 0
+    @media (max-width: 620px)   
+        a
+            margin-left: 0

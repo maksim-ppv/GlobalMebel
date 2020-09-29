@@ -1,7 +1,5 @@
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
-const video = document.querySelectorAll('.video');
-
 const lockPadding = document.querySelectorAll(".lock-padding");
 
 let unlock = true;
@@ -47,21 +45,8 @@ function popupOpen(curentPopup) {
 	}
 }
 
-
-const videoClose = () => {
-	const iframe = document.querySelectorAll('.iframe');
-	iframe.forEach(item=>{
-		item.classList.remove('show_rel')
-		item.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
-	})
-}
-
 function popupClose(popupActive, doUnlock = true) {
 	if (unlock) {
-		const popupVideo = document.querySelector('#video');
-		if (popupVideo.classList.contains('open')) {
-			videoClose();
-		};
 		popupActive.classList.remove('open');
 		if (doUnlock) {
 			bodyUnLock();
@@ -110,14 +95,6 @@ document.addEventListener('keydown', function (e) {
 		const popupActive = document.querySelector('.popup.open');
 		popupClose(popupActive);
 	}
-});
-
-video.forEach((item,i)=>{
-	item.addEventListener('click', event=>{
-		const elem = document.getElementById(i);
-		elem.classList.add('show_rel')
-		elem.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-	});
 });
 
 

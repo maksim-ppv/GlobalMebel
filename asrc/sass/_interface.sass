@@ -8,8 +8,7 @@ body
     font-size: 20px
     color: #F5F5F5
     overflow-x: hidden
-.overflow-hidden
-    width: 100%
+.lock
     overflow: hidden
 .container
     max-width: 1470px
@@ -92,7 +91,15 @@ button
         width: 100%
         margin: 10px 0px
 
-section
+.logo
+    max-height: 100px
+    @media (max-width: 991.98px)
+        height: 100%
+    img
+        height: 100%
+        object-fit: cover 
+
+section,footer
     background: #1D1B1B 
     @media (max-width: 767.98px)
         margin-top: -2px
@@ -171,15 +178,7 @@ section
     width: 398px
     height: 479px
     padding: 30px
-    @media (max-width: 1199px)
-        left: 10%
-    @media (max-width: 991.98px)
-        left: 50%
-        transform: translateX(-50%)
     @media (max-width: 576.98px)
-        position: relative
-        width: 95%
-        height: 440px
         padding: 18px
         
 .form__title
