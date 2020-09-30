@@ -1,10 +1,6 @@
 
 // var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
 
-const popupFormname = document.querySelectorAll('.popup__form-name');
-const popupThanksTitle = document.querySelectorAll('.popup-thanks__title');
-
-
 
 //FORMS
 function forms(){
@@ -61,7 +57,6 @@ $.each(form.find('.req'), function(index, val) {
 	er+=formValidate($(this));
 });
 if(er==0){
-	removeFormError(form);
 	if(ms!=null && ms!=''){
 		showMessageByClass(ms, nums);
 		return false;
@@ -83,45 +78,13 @@ function formValidate(input){
 }
 
 function showMessageByClass(ms, nums){
-
+    const msPopup = document.getElementById(ms);
+    popupOpen(msPopup);
     function popupThanks(ms) {
 
-        const popupMassive = [...popupFormname];
-        const resultInput = popupMassive.filter(item=> {
-            return item.value !== '';
-        });
-        popupFormname.forEach(item=>{
-            const name = `Спасибо!`;
-            popupThanksTitle.forEach(item=>{
-                item.textContent = name;
-            })
-        })
-        resultInput.forEach(item=>{
-            const name = `Спасибо, ${item.value}!`;
-            popupThanksTitle.forEach(item=>{
-                item.textContent = name;
-            })
-        })
-        popupFormname.forEach(item=>{
-            item.value = '';
-        })
-        const msPopup = document.getElementById(ms);
-        popupOpen(msPopup);
         
     };
-    if(nums == '4'){
-        let th = $(".popup__for_mail_4");
-        $.ajax({
-            type: "POST",
-			url: "https://zox.by/wp-content/themes/zox/mail.php",
-            data: th.serialize()
-        }).done(popupThanks(ms),
-        setTimeout(function() {
-            th.trigger("reset");
-        }, 1000)
-        );
-    };
-    if(nums == '3'){
+    if(nums == ''){
         let th = $(".popup__for_mail_3");
 		$.ajax({
 			type: "POST",
@@ -132,9 +95,6 @@ function showMessageByClass(ms, nums){
             th.trigger("reset");
         }, 1000)
         );
-	};
-	if(ms == 'video'){
-		popupThanks(ms);
 	};
 	if(nums == '1'){
         let th = $(".popup__for_mail_1");
@@ -172,7 +132,7 @@ function addError(input){
 
 function removeError(input){
 input.removeClass('err');
-$('.req-phone_message').removeError('err');
+$('.req-phone_message').removeClass('err');
 }
 
 function maskclear(n){
