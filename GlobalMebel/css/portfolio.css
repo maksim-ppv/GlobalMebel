@@ -38,3 +38,16 @@
   transition: 0.3s all;
   color: #E0B98D;
 }
+
+.our-projects__body {
+  border: none;
+  padding-bottom: 130px;
+}
+
+.our-projects__body:before {
+  display: none;
+}
+
+.our-project__button {
+  bottom: 55px;
+}
