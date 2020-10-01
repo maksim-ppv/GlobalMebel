@@ -7004,6 +7004,66 @@ if($('.feedback__slider').length>0){
 };
 
 
+const servicePagesItem = document.querySelectorAll('.service-pages__item');
+	
+	if(servicePagesItem){
+		servicePagesItem.forEach((item, num)=>{
+			item.addEventListener('click',()=>{
+				$(".popup-service-page__row").removeClass("show");
+				$(".popup-service-page__row").addClass("display_none");
+				console.log(num);
+				$(".popup-service-page__row").eq(num).removeClass("display_none");
+				$(".popup-service-page__row").eq(num).addClass("show");
+
+				setTimeout(()=>{if($('.service-page__slider').length>0){
+					const show = document.querySelector('.show');
+					const slider = show.querySelector('.service-page__slider');
+					const buttons = show.querySelector('.service-page__btn-group');
+					$(slider).slick({
+					//autoplay: true,
+					infinite: true,
+					// dots: true,
+					arrows: true,
+					accessibility:false,
+					fade: true,
+					slidesToShow:1,
+					autoplaySpeed: 3000,
+					//asNavFor:'',
+					adaptiveHeight: false,
+					swipe: false,
+					//appendDots:
+					appendArrows:$(buttons),
+					nextArrow:'<button type="button" class="slick-next"></button>',
+					prevArrow:'<button type="button" class="slick-prev"></button>',
+					// variableWidth: true,
+					// centerMode: true,
+					responsive: [{
+						breakpoint: 1200,
+						settings: {
+						slidesToShow: 3,}
+						},{
+						breakpoint: 670,
+						settings: {
+						slidesToShow: 2}
+						}
+					]
+						
+					});
+					const numberCurrent = show.querySelector('.service-page__number_current');
+					const numberLenght = show.querySelector('.service-page__number_lenght');
+					numberLenght.textContent = $('.show .service-page-slider__item').length;
+					$(slider).on('afterChange', function (event, slick, currentSlide) {
+						$(numberCurrent).text(currentSlide+1);
+						});
+				};
+			},500)
+
+			})
+		})
+	}
+
+
+
 
 // //ibg
 

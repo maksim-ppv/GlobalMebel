@@ -18,6 +18,19 @@ body
     border-left: 1px solid #525252
     @media (max-width: 576.98px)
         border: none
+._lineCenter
+    position: relative
+    @media (min-width: 1200px)
+        &:before
+            content: ''
+            top: 0px
+            display: block
+            left: 50%
+            transform: translateX(-50%)
+            height: 100%
+            width: 1px
+            position: absolute
+            border-right: 1px solid #525252
 ._lineAll
     border: 1px solid #525252
     @media (max-width: 576.98px)
