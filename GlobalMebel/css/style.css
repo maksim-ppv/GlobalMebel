@@ -1735,7 +1735,8 @@ svg #base {
 
 .slider__btn-group .slick-arrow,
 .feedback__btn-group .slick-arrow,
-.service-page__btn-group .slick-arrow {
+.service-page__btn-group .slick-arrow,
+.card-slider__btn-group .slick-arrow {
   z-index: 10;
   font-size: 0;
   width: 40px;
@@ -1744,7 +1745,8 @@ svg #base {
 
 .slider__btn-group .slick-arrow.slick-prev,
 .feedback__btn-group .slick-arrow.slick-prev,
-.service-page__btn-group .slick-arrow.slick-prev {
+.service-page__btn-group .slick-arrow.slick-prev,
+.card-slider__btn-group .slick-arrow.slick-prev {
   left: 0;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -1757,7 +1759,8 @@ svg #base {
 
 .slider__btn-group .slick-arrow.slick-prev:hover,
 .feedback__btn-group .slick-arrow.slick-prev:hover,
-.service-page__btn-group .slick-arrow.slick-prev:hover {
+.service-page__btn-group .slick-arrow.slick-prev:hover,
+.card-slider__btn-group .slick-arrow.slick-prev:hover {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
@@ -1766,13 +1769,15 @@ svg #base {
 
 .slider__btn-group .slick-arrow.slick-prev.slick-disabled,
 .feedback__btn-group .slick-arrow.slick-prev.slick-disabled,
-.service-page__btn-group .slick-arrow.slick-prev.slick-disabled {
+.service-page__btn-group .slick-arrow.slick-prev.slick-disabled,
+.card-slider__btn-group .slick-arrow.slick-prev.slick-disabled {
   background: url("../img/services/arrow.svg") 0 0/100% no-repeat;
 }
 
 .slider__btn-group .slick-arrow.slick-next,
 .feedback__btn-group .slick-arrow.slick-next,
-.service-page__btn-group .slick-arrow.slick-next {
+.service-page__btn-group .slick-arrow.slick-next,
+.card-slider__btn-group .slick-arrow.slick-next {
   right: 0;
   background: url("../img/services/arrow.svg") 0 0/100% no-repeat;
   -webkit-transition: 0.3s all;
@@ -1782,7 +1787,8 @@ svg #base {
 
 .slider__btn-group .slick-arrow.slick-next:hover,
 .feedback__btn-group .slick-arrow.slick-next:hover,
-.service-page__btn-group .slick-arrow.slick-next:hover {
+.service-page__btn-group .slick-arrow.slick-next:hover,
+.card-slider__btn-group .slick-arrow.slick-next:hover {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
@@ -1791,13 +1797,15 @@ svg #base {
 
 .slider__btn-group .slick-arrow.slick-next.slick-disabled,
 .feedback__btn-group .slick-arrow.slick-next.slick-disabled,
-.service-page__btn-group .slick-arrow.slick-next.slick-disabled {
+.service-page__btn-group .slick-arrow.slick-next.slick-disabled,
+.card-slider__btn-group .slick-arrow.slick-next.slick-disabled {
   background: url("../img/services/arrow.svg") 0 0/100% no-repeat;
 }
 
 .slider__btn-group,
 .feedback__btn-group,
-.service-page__btn-group {
+.service-page__btn-group,
+.card-slider__btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3622,7 +3630,8 @@ input.err {
 
   .slider__btn-group,
   .feedback__btn-group,
-  .service-page__btn-group {
+  .service-page__btn-group,
+  .card-slider__btn-group {
     text-align: center;
     margin: 40px auto 0px;
   }

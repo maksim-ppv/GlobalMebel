@@ -13,7 +13,7 @@
   position: fixed;
   opacity: 1;
   visibility: visible;
-  z-index: 999;
+  z-index: 9999;
   background-color: #000000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;

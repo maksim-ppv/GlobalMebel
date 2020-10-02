@@ -51,3 +51,10 @@
 .our-project__button {
   bottom: 55px;
 }
+
+@media (max-width: 576.98px) {
+  .crumbs {
+    text-align: center;
+    padding-top: 15px;
+  }
+}

@@ -195,6 +195,90 @@ if($('.service-page__slider').length>0){
 };
 
 
+if($('.card-slider__body').length>0){
+
+	const cardSliderControl = document.querySelectorAll('.card-slider__control');
+		
+	if(cardSliderControl){
+		cardSliderControl.forEach((item, num)=>{
+			item.addEventListener('click',()=>{
+				$(".card-slider__body").removeClass("hide");
+				$(".card-slider__body").addClass("display_none");
+				$(".card-slider__body").eq(num).removeClass("display_none");
+				$(".card-slider__control").removeClass("card-slider__control_active");
+				$(".card-slider__control").eq(num).addClass("card-slider__control_active");
+			})
+		})
+	}
+	const sliders = document.querySelectorAll('.card-slider__body');
+	sliders.forEach(item=>{
+
+	
+	const left = item.querySelector('.card-slider__left-body');
+	const right = item.querySelector('.card-slider__right');
+	const buttons = item.querySelector('.card-slider__btn-group');
+
+	$(left).slick({
+	//autoplay: true,
+	infinite: true,
+	// dots: true,
+	arrows: true,
+	fade: true,
+	accessibility:false,
+	slidesToShow:1,
+	autoplaySpeed: 3000,
+	asNavFor:right,
+	// adaptiveHeight: true,
+	swipe: false,
+	//appendDots:
+	appendArrows:$(buttons),
+	nextArrow:'<button type="button" class="slick-next"></button>',
+	prevArrow:'<button type="button" class="slick-prev"></button>',
+	// variableWidth: true,
+	// centerMode: true,
+
+		
+	});
+
+	$(right).slick({
+		//autoplay: true,
+		infinite: true,
+		dots: false,
+		arrows: false,
+		accessibility:false,
+		slidesToShow:4,
+		autoplaySpeed: 3000,
+		asNavFor:left,
+		// adaptiveHeight: true,
+		vertical: true,
+		swipe: false,
+		//appendDots:
+		// appendArrows:$('.feedback__btn-group'),
+		// nextArrow:'<button type="button" class="slick-next"></button>',
+		// prevArrow:'<button type="button" class="slick-prev"></button>',
+		// variableWidth: true,
+		// centerMode: true,
+		responsive: [{
+			breakpoint: 992,
+			settings: {
+			vertical: false,
+			slidesToShow: 3,}
+			},{
+			breakpoint: 670,
+			settings: {
+			vertical: false,
+			slidesToShow: 2}
+			}
+		]
+			
+		});
+	})
+};
+
+
+
+
+
 // //ibg
 
 function ibg(){

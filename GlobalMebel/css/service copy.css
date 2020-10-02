@@ -9,7 +9,7 @@
 
 .footer-bottom {
   position: relative;
-  margin: 0px -1px;
+  margin: 0px -2px;
 }
 
 .crumbs {
@@ -37,4 +37,11 @@
   -o-transition: 0.3s all;
   transition: 0.3s all;
   color: #E0B98D;
+}
+
+@media (max-width: 576.98px) {
+  .crumbs {
+    text-align: center;
+    padding-top: 15px;
+  }
 }

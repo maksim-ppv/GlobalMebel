@@ -329,6 +329,11 @@
 }
 
 @media (max-width: 576.98px) {
+  .crumbs {
+    text-align: center;
+    padding-top: 15px;
+  }
+
   .service-page__materials {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
