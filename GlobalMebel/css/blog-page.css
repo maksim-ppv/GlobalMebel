@@ -42,6 +42,31 @@
   color: #797979;
 }
 
+.our-projects__body {
+  border: none;
+  padding-bottom: 130px;
+}
+
+.our-projects__body:before {
+  display: none;
+}
+
+.our-project__button {
+  bottom: 55px;
+}
+
+.our-projects__body {
+  padding-bottom: 70px;
+}
+
+.blog-content {
+  border-bottom: none;
+}
+
+.our-project__button {
+  bottom: 0;
+}
+
 @media (max-width: 576.98px) {
   .crumbs {
     text-align: center;
