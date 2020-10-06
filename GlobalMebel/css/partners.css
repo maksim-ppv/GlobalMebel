@@ -1,0 +1,273 @@
+#header,
+.footer-bottom {
+  background: #1D1B1B;
+}
+
+.footer-cont {
+  padding-top: 50px;
+}
+
+.footer-bottom {
+  position: relative;
+  margin: 0px -2px;
+}
+
+.crumbs {
+  display: block;
+  padding-top: 50px;
+  padding-left: 15px;
+  margin-left: -20px;
+}
+
+.crumb {
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding: 0px 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.crumb:hover {
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  color: #E0B98D;
+}
+
+.crumb_active {
+  color: #797979;
+}
+
+#header,
+.footer-bottom {
+  background: #1D1B1B;
+}
+
+.footer-cont {
+  padding-top: 50px;
+}
+
+.footer-bottom {
+  position: relative;
+  margin: 0px -2px;
+}
+
+.crumbs {
+  display: block;
+  padding-top: 50px;
+  padding-left: 15px;
+  margin-left: -20px;
+}
+
+.crumb {
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding: 0px 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.crumb:hover {
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  color: #E0B98D;
+}
+
+.crumb_active {
+  color: #797979;
+}
+
+.our-projects__body {
+  border: none;
+  padding-bottom: 130px;
+}
+
+.our-projects__body:before {
+  display: none;
+}
+
+.our-project__button {
+  bottom: 55px;
+}
+
+.cards__container {
+  border-bottom: none;
+}
+
+.cards__body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.service__text {
+  padding-bottom: 25px;
+}
+
+.text-about__top {
+  padding-bottom: 30px;
+}
+
+.partners-header__block {
+  padding-top: 40px;
+}
+
+.partners-header__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  display: block;
+  padding: 0px 15px 25px;
+}
+
+.partners-header__img-block {
+  width: 100%;
+  height: 100%;
+}
+
+.partners-header__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section__slider {
+  border-top: none;
+}
+
+.partners-slider {
+  padding-bottom: 50px;
+}
+
+.partners-slider__content {
+  position: relative;
+  background: #1D1B1B;
+  border-left: none;
+  border-right: none;
+}
+
+.padding {
+  padding-top: 50px;
+}
+
+.brands {
+  background: url("../img/pages/partners/image2.jpg") center/cover no-repeat;
+}
+
+.container.brands__contents {
+  display: block;
+  padding: 55px 120px 70px 120px;
+}
+
+.brands__title-block {
+  margin-bottom: 30px;
+}
+
+.brands__column-image {
+  max-height: 80px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 16.66%;
+          flex: 0 1 16.66%;
+}
+
+.brands__column-image picture {
+  width: 100%;
+  height: 100%;
+}
+
+.brands__column-image img {
+  height: 100%;
+  padding: 10px 30px;
+}
+
+@media (min-width: 576.98px) {
+  .brands__column-images {
+    margin: 0px -30px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .card-padding {
+    padding: 0px 15px 15px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container.brands__contents {
+    padding: 40px 80px 50px 80px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .brands__title-block {
+    text-align: left;
+  }
+
+  .brands__column-image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header__btn-group {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .brands__column-image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .crumbs {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .crumbs {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .partners-header__block {
+    padding-top: 10px;
+  }
+
+  .partners-header__text {
+    padding: 0px 0px 25px;
+  }
+
+  .padding {
+    padding-top: 20px;
+  }
+
+  .footer-cont {
+    padding-top: 0;
+  }
+
+  .container.brands__contents {
+    padding: 0px 15px;
+  }
+
+  .brands__title-block {
+    text-align: center;
+  }
+}
+
+.webp .brands { background: url(../img/pages/partners/image2.webp) center/cover no-repeat; }

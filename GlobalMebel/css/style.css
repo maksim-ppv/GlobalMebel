@@ -517,6 +517,59 @@ footer {
   transition: 0.3s all;
 }
 
+.rating-block {
+  display: table;
+  font-size: 0;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.rating.edit .star {
+  cursor: pointer;
+}
+
+.rating .star {
+  width: 24px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+
+.rating__line {
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background: url("../img/icon/bg_rating.svg") 0 0 no-repeat;
+  z-index: 1;
+  background-size: 120px 100%;
+}
+
+.rating__activeline {
+  position: absolute;
+  width: 0px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background: url("../img/icon/bg_rating_active.svg") 0 0 no-repeat;
+  z-index: 2;
+  background-size: 120px 100%;
+}
+
+.rating__value {
+  display: inline-block;
+  color: #1b3139;
+  font-size: 14px;
+  line-height: 13px;
+  vertical-align: middle;
+}
+
 .popup {
   position: fixed;
   width: 100%;
@@ -1287,7 +1340,17 @@ svg #base {
   padding: 10%;
   position: absolute;
   cursor: pointer;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
   background: url("../img//icon/play.png") center/cover no-repeat;
+}
+
+.video-about__open:hover:after {
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  background: url("../img/icon/play-gold.png") center/cover no-repeat;
 }
 
 .video-about__open-video {
@@ -3974,6 +4037,8 @@ input.err {
 .webp .header{ background: url(../img//header/bg-header.webp) center no-repeat; }
 
 .webp .video-about__open:after{ background: url(../img//icon/play.webp) center/cover no-repeat; }
+
+.webp .video-about__open:hover:after{ background: url(../img/icon/play-gold.webp) center/cover no-repeat; }
 
 .webp .brands{ background: url(../img/brands/brands.webp) center/cover no-repeat; }
 
