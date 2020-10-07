@@ -458,6 +458,10 @@
   padding: 30px 30px 10px 30px;
 }
 
+.feedback-page-button {
+  margin: 5px;
+}
+
 .feedback-block__text {
   font-size: 18px;
 }
