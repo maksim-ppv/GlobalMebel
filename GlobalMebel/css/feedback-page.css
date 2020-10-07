@@ -458,10 +458,6 @@
   padding: 30px 30px 10px 30px;
 }
 
-.feedback-page-button {
-  margin-left: auto;
-}
-
 .feedback-block__text {
   font-size: 18px;
 }
@@ -507,6 +503,10 @@
   margin-bottom: 20px;
 }
 
+.feedback-page-gallery__img:last-child {
+  margin: 0px 0px 20px 0px;
+}
+
 .feedback-page-gallery__img img {
   width: 100%;
   height: 100%;
@@ -547,8 +547,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .feedback-page-form__img:after {
@@ -683,6 +681,12 @@
   }
 }
 
+@media (min-width: 991.98px) {
+  .feedback-page-button {
+    margin-left: auto;
+  }
+}
+
 @media (max-width: 991.98px) {
   .header__btn-group {
     -webkit-box-pack: start;
@@ -738,6 +742,10 @@
             transform: translateX(-50%);
     bottom: -80px;
   }
+
+  .feedback-page-form__item {
+    display: none;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -748,6 +756,22 @@
 
   .video-about__block {
     min-height: 300px;
+  }
+
+  .services__body {
+    padding-top: 40px;
+  }
+
+  .service-page__item {
+    padding: 0px 15px 15px 15px;
+  }
+
+  .feedback-page-button {
+    margin: 0;
+  }
+
+  .footer-cont {
+    padding-top: 0;
   }
 }
 
@@ -761,6 +785,10 @@
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 20px;
+  }
+
+  .feedback-slogan {
+    text-align: center;
   }
 }
 
@@ -816,5 +844,52 @@
 
   .feedback-slogan {
     text-align: center;
+  }
+
+  .service__items {
+    padding-bottom: 100px;
+  }
+
+  .service__item {
+    padding-bottom: 25px;
+  }
+
+  .our-project__button {
+    bottom: 30px;
+  }
+
+  .feedback-image {
+    margin: 0px 0px 20px;
+  }
+
+  .feedback-page__cover {
+    padding: 10px;
+  }
+
+  .feedback-page-gallery__img {
+    margin: 0px 10px 10px 0px;
+    width: 83px;
+    height: 83px;
+  }
+
+  .feedback-page-gallery__img:last-child {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .service-card__item {
+    padding: 0px 0px 15px 0px;
+  }
+
+  .feedback-form {
+    padding: 20px;
+  }
+
+  .form-foto__blocks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .form-foto__block {
+    margin-bottom: 15px;
   }
 }
